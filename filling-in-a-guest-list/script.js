@@ -31,7 +31,7 @@
 
 
 
-// MY CODE BELOW
+// MY CODE BELOW (ATTEMPT #1)
 
 // const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
 
@@ -50,7 +50,7 @@
 // refused.textContent += ;
 // admitted.textContent += ;
 
-// MY CODE ABOVE
+// MY CODE ABOVE (ATTEMPT #1)
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-// MY CODE BELOW
+// MY CODE BELOW (ATTEMPT #2)
 
 const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
 
@@ -71,9 +71,17 @@ const refused = document.querySelector('.refused');
 admitted.textContent = 'Admit: ';
 refused.textContent = 'Refuse: ';
 
-// loop starts here
+for (person of people) {
+    if (person === 'Phil' || person === 'Lola') {
+        refused.textContent += `${person}, `;
+    } else {
+        admitted.textContent += `${person}, `;
+    }
+}
 
-// refused.textContent += ;
-// admitted.textContent += ;
+// the code below was copied and pasted from the source code
+refused.textContent = refused.textContent.slice(0,refused.textContent.length-2) + '.';
+admitted.textContent = admitted.textContent.slice(0,admitted.textContent.length-2) + '.';
 
-// MY CODE ABOVE
+
+// MY CODE ABOVE (ATTEMPT #2)
