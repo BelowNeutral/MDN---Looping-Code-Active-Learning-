@@ -1,26 +1,26 @@
 // SOLUTION CODE BELOW
 
 // labeling constants and barebones of needed code
-const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+// const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
 
-const admitted = document.querySelector('.admitted');
-const refused = document. querySelector('.refused');
+// const admitted = document.querySelector('.admitted');
+// const refused = document. querySelector('.refused');
 
-admitted.textContent = 'Admit: ';
-refused.textContent = 'Refuse: ';
+// admitted.textContent = 'Admit: ';
+// refused.textContent = 'Refuse: ';
 
-// for...of loop is used here to grab items from array in order to compare in code blocks
-for (const person of people) {
-    if (person === 'Phil' || person === 'Lola') {
-        refused.textContent += `${person}, `;
-    } else {
-        admitted.textContent += `${person}, `;
-    }
-}
+// // for...of loop is used here to grab items from array in order to compare in code blocks
+// for (const person of people) {
+//     if (person === 'Phil' || person === 'Lola') {
+//         refused.textContent += `${person}, `;
+//     } else {
+//         admitted.textContent += `${person}, `;
+//     }
+// }
 
-// these add a period at the end of both lists bc we don't want them ending with commas
-refused.textContent = refused.textContent.slice(0,refused.textContent.length-2) + '.';
-admitted.textContent = admitted.textContent.slice(0,admitted.textContent.length-2) + '.';
+// // these add a period at the end of both lists bc we don't want them ending with commas
+// refused.textContent = refused.textContent.slice(0,refused.textContent.length-2) + '.';
+// admitted.textContent = admitted.textContent.slice(0,admitted.textContent.length-2) + '.';
 
 // SOLUTION CODE ABOVE
 
@@ -52,3 +52,28 @@ admitted.textContent = admitted.textContent.slice(0,admitted.textContent.length-
 
 // MY CODE ABOVE
 
+
+
+
+
+
+
+
+
+
+
+// MY CODE BELOW
+
+const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+
+const admitted = document.querySelector('.admitted');
+const refused = document.querySelector('.refused');
+admitted.textContent = 'Admit: ';
+refused.textContent = 'Refuse: ';
+
+// loop starts here
+
+// refused.textContent += ;
+// admitted.textContent += ;
+
+// MY CODE ABOVE
